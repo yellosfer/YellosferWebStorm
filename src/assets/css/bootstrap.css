@@ -2438,7 +2438,8 @@ fieldset:disabled a.btn {
 .btn-yellosfer {
   color: #fff;
   background-color: var(--yellosfer-button);
-  border-color: var(--yellosfer-border);;
+  border-color: var(--yellosfer-border);
+  margin-left: 10px;
 }
 
 .btn-yellosfer:hover {
@@ -4643,6 +4644,7 @@ input[type="button"].btn-block {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  margin-top:20px;
 }
 
 .card > hr {
