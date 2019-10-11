@@ -26,6 +26,24 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
+
+  --yellosfer-bg: #FFDF89;
+  --yellosfer-bg50: rgba(255,223,137,0.5);
+  --yellosfer-bg75: rgba(255,223,137,0.75);
+  --yellosfer-bg25: rgba(255,223,137,0.25);
+  --yellosfer-bg10: rgba(255,223,137,0.1);
+
+  --yellosfer-button: #EAAE0C;
+
+  --yellosfer-text: #B38304;
+  --yellosfer-text50: rgba(179,131,4,0.5);
+  --yellosfer-text75: rgba(179,131,4,0.75);
+  --yellosfer-text25: rgba(179,131,4,0.25);
+  --yellosfer-text10: rgba(179,131,4,0.1);
+
+  --yellosfer-hover: #B38304;
+  --yellosfer-border : #FFDF89;
+
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -579,8 +597,6 @@ pre code {
 
 .container-fluid {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -2419,6 +2435,18 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
+.btn-yellosfer {
+  color: #fff;
+  background-color: var(--yellosfer-button);
+  border-color: var(--yellosfer-border);;
+}
+
+.btn-yellosfer:hover {
+  color: #fff;
+  background-color: var(--yellosfer-hover);
+  border-color: var(--yellosfer-border)
+}
+
 .btn-primary {
   color: #fff;
   background-color: #007bff;
@@ -4155,6 +4183,7 @@ input[type="button"].btn-block {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  border-radius: 2px;
 }
 
 .navbar > .container,
@@ -4500,6 +4529,59 @@ input[type="button"].btn-block {
 .navbar-light .navbar-text a:hover, .navbar-light .navbar-text a:focus {
   color: rgba(0, 0, 0, 0.9);
 }
+
+/* YELLOSFER NAVBAR */
+
+.navbar-yellosfer .navbar-brand {
+  color: var(--yellosfer-bg);
+}
+
+.navbar-yellosfer .navbar-brand:hover, .navbar-yellosfer .navbar-brand:focus {
+  color: var(--yellosfer-bg);
+}
+
+.navbar-yellosfer .navbar-nav .nav-link {
+  color: var(--yellosfer-bg50);
+
+}
+
+.navbar-yellosfer .navbar-nav .nav-link:hover, .navbar-yellosfer .navbar-nav .nav-link:focus {
+  color: var(--yellosfer-bg75);
+}
+
+.navbar-yellosfer .navbar-nav .nav-link.disabled {
+  color: var(--yellosfer-bg25);
+}
+
+.navbar-yellosfer .navbar-nav .show > .nav-link,
+.navbar-yellosfer .navbar-nav .active > .nav-link,
+.navbar-yellosfer .navbar-nav .nav-link.show,
+.navbar-yellosfer .navbar-nav .nav-link.active {
+  color: var(--yellosfer-bg);
+}
+
+.navbar-yellosfer .navbar-toggler {
+  color: var(--yellosfer-bg50);
+  border-color: var(--yellosfer-bg10);
+}
+
+.navbar-yellosfer .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-yellosfer .navbar-text {
+  color: var(--yellosfer-bg50);
+}
+
+.navbar-yellosfer .navbar-text a {
+  color: var(--yellosfer-text);
+}
+
+.navbar-yellosfer .navbar-text a:hover, .navbar-yellosfer .navbar-text a:focus {
+  color: var(--yellosfer-text);
+}
+
+/* YELLOSFER NAVBAR */
 
 .navbar-dark .navbar-brand {
   color: #fff;
@@ -6585,6 +6667,16 @@ a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
   background-color: #1d2124 !important;
+}
+
+.bg-yellosfer {
+  background-color: var(--yellosfer-bg) !important;
+}
+
+a.bg-yellosfer:hover, a.bg-yellosfer:focus,
+button.bg-dark:hover,
+button.bg-dark:focus {
+  background-color: var(--yellosfer-hover) !important;
 }
 
 .bg-white {
